@@ -1,0 +1,32 @@
+title: Rodrigo Santili Sgarioni
+description: Data Platform Manager | Data Engineering Leader | DataOps Specialist
+theme: jekyll-theme-minimal
+show_downloads: false
+author: Rodrigo Santili Sgarioni
+email: rssgarioni@gmail.com
+url: https://rodrigo-santili.github.io
+github:
+  username: rodrigo-santili
+  repository: rodrigo-santili.github.io
+  branch: main
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style 
