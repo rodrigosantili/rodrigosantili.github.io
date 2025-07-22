@@ -5,16 +5,20 @@
   "main": "index.html",
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "build": "echo 'Build completed'",
+    "build": "node build.js build",
+    "build:clean": "node build.js clean",
     "deploy": "./update-portfolio.sh",
     "lint:html": "htmlhint index.html",
     "lint:css": "stylelint assets/css/*.css",
-    "lint:js": "eslint assets/js/*.js",
+    "lint:js": "eslint src/**/*.js",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
     "format": "prettier --write .",
     "test": "echo 'No tests specified'",
-    "clean": "rm -rf _site .jekyll-cache",
+    "clean": "rm -rf _site .jekyll-cache dist",
     "serve": "bundle exec jekyll serve",
-    "build:jekyll": "bundle exec jekyll build"
+    "build:jekyll": "bundle exec jekyll build",
+    "analyze": "npm run lint && npm run build",
+    "start": "npm run build && npm run dev"
   },
   "keywords": [
     "portfolio",
