@@ -1438,8 +1438,6 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 
 ## 🤝 Vamos Conectar!
 
-Estou sempre aberto a novas oportunidades de **liderança em dados** e networking com profissionais da área. 
-
 **Vamos conversar sobre como posso contribuir para o sucesso do seu projeto de dados!**
 
 ---
