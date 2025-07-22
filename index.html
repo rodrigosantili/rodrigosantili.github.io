@@ -48,7 +48,7 @@
             <p class="subtitle">Data Platform Manager | Data Engineering Leader | DataOps Specialist</p>
             
             <div class="contact-info">
-                <a href="mailto:rssgarioni@gmail.com" class="contact-item" onclick="copyEmail(); return false;">
+                <a href="mailto:rssgarioni@gmail.com" class="contact-item">
                     <i class="fas fa-envelope"></i>
                     rssgarioni@gmail.com
                 </a>
@@ -538,13 +538,13 @@
                 <p style="margin-bottom: 30px; font-size: 1.1rem;">Vamos conversar sobre como posso contribuir para o sucesso do seu projeto de dados.</p>
                 
                 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                    <button onclick="sendEmail()" class="badge badge-primary" style="padding: 15px 25px; font-size: 1rem; cursor: pointer;">
+                    <button data-action="send-email" class="badge badge-primary" style="padding: 15px 25px; font-size: 1rem; cursor: pointer;">
                         <i class="fas fa-envelope"></i> Enviar Email
                     </button>
                     <a href="https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330" target="_blank" class="badge badge-primary" style="padding: 15px 25px; font-size: 1rem; text-decoration: none;">
                         <i class="fab fa-linkedin"></i> Conectar no LinkedIn
                     </a>
-                    <button onclick="shareOnLinkedIn()" class="badge badge-success" style="padding: 15px 25px; font-size: 1rem; cursor: pointer;">
+                    <button data-action="share-linkedin" class="badge badge-success" style="padding: 15px 25px; font-size: 1rem; cursor: pointer;">
                         <i class="fas fa-share"></i> Compartilhar
                     </button>
                 </div>
@@ -574,7 +574,9 @@
     <!-- JavaScript -->
     <script type="module" src="src/main.js"></script>
     
-    <!-- Google Analytics (opcional) -->
+    <!-- Google Analytics (configurável) -->
+    <!-- Descomente e configure seu ID do Google Analytics -->
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -582,5 +584,6 @@
         gtag('js', new Date());
         gtag('config', 'GA_MEASUREMENT_ID');
     </script>
+    -->
 </body>
 </html> 
