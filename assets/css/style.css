@@ -281,9 +281,25 @@ body {
   line-height: 1.4;
 }
 
-.project-description {
-  color: var(--secondary-color);
+.project-header {
   margin-bottom: 15px;
+}
+
+.project-divider {
+  border: none;
+  border-top: 1px solid #676262;
+  margin: 10px 0;
+}
+
+.project-info {
+  color: var(--secondary-color);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.project-details {
+  margin-bottom: 15px;
+  flex: 1;
 }
 
 .project-tech {
