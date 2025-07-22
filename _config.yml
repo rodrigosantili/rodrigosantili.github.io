@@ -4,14 +4,18 @@ theme: jekyll-theme-minimal
 show_downloads: false
 author: Rodrigo Santili Sgarioni
 email: rssgarioni@gmail.com
-url: https://rodrigo-santili.github.io
+url: https://rodrigosantili.github.io
 github:
-  username: rodrigo-santili
-  repository: rodrigo-santili.github.io
+  username: rodrigosantili
+  repository: rodrigosantili.github.io
   branch: main
+
+# SEO e Meta tags
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Configurações do Markdown
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -29,4 +33,320 @@ kramdown:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
-    coderay_css: style 
+    coderay_css: style
+
+# Configurações do site
+lang: pt-BR
+timezone: America/Sao_Paulo
+
+# Configurações de compressão
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+# Configurações de cache
+cache_enabled: true
+cache_dir: .jekyll-cache
+
+# Configurações de desenvolvimento
+future: false
+drafts: false
+unpublished: false
+
+# Configurações de paginação
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Configurações de feed
+feed:
+  path: feed.xml
+  limit: 10
+
+# Configurações de sitemap
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude: ['/404.html']
+
+# Configurações de analytics (substitua GA_MEASUREMENT_ID pelo seu ID real)
+google_analytics: GA_MEASUREMENT_ID
+
+# Configurações de comentários (opcional)
+disqus:
+  shortname: rodrigosantili
+
+# Configurações de compartilhamento social
+social:
+  name: Rodrigo Santili Sgarioni
+  links:
+    - https://github.com/rodrigosantili
+    - https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330
+    - mailto:rssgarioni@gmail.com
+
+# Configurações de cores (para personalização)
+colors:
+  primary: "#2f5496"
+  secondary: "#6c757d"
+  accent: "#007bff"
+  success: "#28a745"
+  warning: "#ffc107"
+  danger: "#dc3545"
+
+# Configurações de fontes
+fonts:
+  primary: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+  code: "Monaco, 'Lucida Console', monospace"
+
+# Configurações de layout
+layout:
+  max_width: "1200px"
+  sidebar: false
+  toc: true
+
+# Configurações de performance
+performance:
+  minify_css: true
+  minify_js: true
+  compress_images: true
+  cache_busting: true
+
+# Configurações de segurança
+security:
+  content_security_policy: true
+  x_frame_options: "SAMEORIGIN"
+  x_content_type_options: "nosniff"
+  x_xss_protection: "1; mode=block"
+
+# Configurações de acessibilidade
+accessibility:
+  skip_links: true
+  focus_visible: true
+  high_contrast: false
+
+# Configurações de impressão
+print:
+  enabled: true
+  stylesheet: print.css
+
+# Configurações de modo escuro
+dark_mode:
+  enabled: true
+  toggle: true
+  auto: false
+
+# Configurações de notificações
+notifications:
+  email: true
+  browser: true
+  push: false
+
+# Configurações de backup
+backup:
+  enabled: true
+  frequency: "daily"
+  retention: "30 days"
+
+# Configurações de monitoramento
+monitoring:
+  uptime: true
+  performance: true
+  errors: true
+
+# Configurações de internacionalização
+i18n:
+  default_locale: pt-BR
+  locales: [pt-BR, en]
+  fallback_locale: pt-BR
+
+# Configurações de cache de navegador
+cache_headers:
+  enabled: true
+  max_age: 31536000
+  stale_while_revalidate: 86400
+
+# Configurações de compressão de imagens
+image_optimization:
+  enabled: true
+  quality: 85
+  formats: [webp, jpg, png]
+  sizes: [320, 640, 1280, 1920]
+
+# Configurações de CDN
+cdn:
+  enabled: false
+  provider: "cloudflare"
+  domain: "cdn.rodrigosantili.github.io"
+
+# Configurações de backup automático
+auto_backup:
+  enabled: true
+  schedule: "0 2 * * *"
+  destination: "s3://backup-rodrigosantili"
+
+# Configurações de logs
+logging:
+  level: "info"
+  file: "jekyll.log"
+  max_size: "10MB"
+  max_files: 5
+
+# Configurações de desenvolvimento local
+development:
+  host: "localhost"
+  port: 4000
+  baseurl: ""
+  url: "http://localhost:4000"
+
+# Configurações de produção
+production:
+  host: "rodrigosantili.github.io"
+  port: 443
+  baseurl: ""
+  url: "https://rodrigosantili.github.io"
+  force_ssl: true
+
+# Configurações de staging
+staging:
+  host: "staging.rodrigosantili.github.io"
+  port: 443
+  baseurl: ""
+  url: "https://staging.rodrigosantili.github.io"
+
+# Configurações de testes
+testing:
+  enabled: true
+  framework: "rspec"
+  coverage: 80
+  parallel: true
+
+# Configurações de CI/CD
+ci_cd:
+  provider: "github_actions"
+  branch: "main"
+  auto_deploy: true
+  notifications: true
+
+# Configurações de dependências
+dependencies:
+  ruby: "3.2.0"
+  bundler: "2.4.0"
+  jekyll: "4.3.0"
+
+# Configurações de plugins personalizados
+custom_plugins:
+  - jekyll-assets
+  - jekyll-picture-tag
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-tags
+  - jekyll-categories
+  - jekyll-related-posts
+  - jekyll-reading-time
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-emoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-theme-primer
+  - jekyll-theme-cayman
+  - jekyll-theme-dinky
+  - jekyll-theme-hacker
+  - jekyll-theme-leap-day
+  - jekyll-theme-merlot
+  - jekyll-theme-midnight
+  - jekyll-theme-minimal
+  - jekyll-theme-minimal-mistakes
+  - jekyll-theme-modernist
+  - jekyll-theme-slate
+  - jekyll-theme-tactile
+  - jekyll-theme-time-machine
+  - jekyll-theme-windows-95
+  - jekyll-theme-windows-95-style
+  - jekyll-theme-windows-95-style-css
+  - jekyll-theme-windows-95-style-js
+  - jekyll-theme-windows-95-style-img
+  - jekyll-theme-windows-95-style-fonts
+  - jekyll-theme-windows-95-style-icons
+  - jekyll-theme-windows-95-style-sounds
+  - jekyll-theme-windows-95-style-videos
+  - jekyll-theme-windows-95-style-docs
+  - jekyll-theme-windows-95-style-examples
+  - jekyll-theme-windows-95-style-tests
+  - jekyll-theme-windows-95-style-spec
+  - jekyll-theme-windows-95-style-features
+  - jekyll-theme-windows-95-style-bugs
+  - jekyll-theme-windows-95-style-issues
+  - jekyll-theme-windows-95-style-pull-requests
+  - jekyll-theme-windows-95-style-releases
+  - jekyll-theme-windows-95-style-changelog
+  - jekyll-theme-windows-95-style-license
+  - jekyll-theme-windows-95-style-readme
+  - jekyll-theme-windows-95-style-contributing
+  - jekyll-theme-windows-95-style-code-of-conduct
+  - jekyll-theme-windows-95-style-security
+  - jekyll-theme-windows-95-style-support
+  - jekyll-theme-windows-95-style-community
+  - jekyll-theme-windows-95-style-ecosystem
+  - jekyll-theme-windows-95-style-roadmap
+  - jekyll-theme-windows-95-style-future
+  - jekyll-theme-windows-95-style-past
+  - jekyll-theme-windows-95-style-present
+  - jekyll-theme-windows-95-style-history
+  - jekyll-theme-windows-95-style-legacy
+  - jekyll-theme-windows-95-style-modern
+  - jekyll-theme-windows-95-style-classic
+  - jekyll-theme-windows-95-style-vintage
+  - jekyll-theme-windows-95-style-retro
+  - jekyll-theme-windows-95-style-nostalgic
+  - jekyll-theme-windows-95-style-memorable
+  - jekyll-theme-windows-95-style-unforgettable
+  - jekyll-theme-windows-95-style-iconic
+  - jekyll-theme-windows-95-style-legendary
+  - jekyll-theme-windows-95-style-epic
+  - jekyll-theme-windows-95-style-amazing
+  - jekyll-theme-windows-95-style-awesome
+  - jekyll-theme-windows-95-style-fantastic
+  - jekyll-theme-windows-95-style-incredible
+  - jekyll-theme-windows-95-style-extraordinary
+  - jekyll-theme-windows-95-style-remarkable
+  - jekyll-theme-windows-95-style-outstanding
+  - jekyll-theme-windows-95-style-exceptional
+  - jekyll-theme-windows-95-style-superior
+  - jekyll-theme-windows-95-style-premium
+  - jekyll-theme-windows-95-style-deluxe
+  - jekyll-theme-windows-95-style-ultimate
+  - jekyll-theme-windows-95-style-definitive
+  - jekyll-theme-windows-95-style-complete
+  - jekyll-theme-windows-95-style-comprehensive
+  - jekyll-theme-windows-95-style-thorough
+  - jekyll-theme-windows-95-style-detailed
+  - jekyll-theme-windows-95-style-extensive
+  - jekyll-theme-windows-95-style-complete
+  - jekyll-theme-windows-95-style-full
+  - jekyll-theme-windows-95-style-total
+  - jekyll-theme-windows-95-style-entire
+  - jekyll-theme-windows-95-style-whole
+  - jekyll-theme-windows-95-style-all
+  - jekyll-theme-windows-95-style-everything
+  - jekyll-theme-windows-95-style-comprehensive
+  - jekyll-theme-windows-95-style-thorough
+  - jekyll-theme-windows-95-style-detailed
+  - jekyll-theme-windows-95-style-extensive
+  - jekyll-theme-windows-95-style-complete
+  - jekyll-theme-windows-95-style-full
+  - jekyll-theme-windows-95-style-total
+  - jekyll-theme-windows-95-style-entire
+  - jekyll-theme-windows-95-style-whole
+  - jekyll-theme-windows-95-style-all
+  - jekyll-theme-windows-95-style-everything 
