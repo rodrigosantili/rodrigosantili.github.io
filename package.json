@@ -1,0 +1,50 @@
+{
+  "name": "rodrigo-santili-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio profissional de Rodrigo Santili Sgarioni - Data Platform Manager",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Build completed'",
+    "deploy": "./update-portfolio.sh",
+    "lint:html": "htmlhint index.html",
+    "lint:css": "stylelint assets/css/*.css",
+    "lint:js": "eslint assets/js/*.js",
+    "format": "prettier --write .",
+    "test": "echo 'No tests specified'",
+    "clean": "rm -rf _site .jekyll-cache",
+    "serve": "bundle exec jekyll serve",
+    "build:jekyll": "bundle exec jekyll build"
+  },
+  "keywords": [
+    "portfolio",
+    "data-platform-manager",
+    "data-engineering",
+    "dataops",
+    "snowflake",
+    "databricks",
+    "aws"
+  ],
+  "author": "Rodrigo Santili Sgarioni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigosantili/rodrigosantili.github.io.git"
+  },
+  "homepage": "https://rodrigosantili.github.io",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 

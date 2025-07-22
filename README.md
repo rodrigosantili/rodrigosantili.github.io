@@ -4,6 +4,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rssgarioni@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rodrigosantili)
+[![Website](https://img.shields.io/badge/Website-2f5496?style=for-the-badge&logo=github&logoColor=white)](https://rodrigosantili.github.io)
 
 ---
 
@@ -141,71 +142,6 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 
 ---
 
-## 🎯 Competências de Liderança
-
-### 👥 **Gestão de Times Técnicos**
-- Liderança de equipes multidisciplinares (5-15 pessoas)
-- Desenvolvimento de talentos e mentoria técnica
-- Cultura de inovação e aprendizado contínuo
-- Gestão de performance e feedback
-
-### 📊 **Estratégia e Governança**
-- Definição de roadmaps estratégicos de dados
-- Implementação de frameworks de governança
-- Alinhamento com objetivos de negócio (C-level)
-- Políticas de qualidade e compliance
-
-### 🚀 **Transformação Digital**
-- Migração de ambientes legados para cloud
-- Modernização de arquiteturas de dados
-- Implementação de práticas DevOps/DataOps
-- Gestão de mudança organizacional
-
-### 💰 **Gestão de Custos e ROI**
-- Otimização de infraestrutura cloud
-- Análise de custo-benefício de soluções
-- Demonstração de valor para stakeholders
-- Budget planning e controle
-
----
-
-## 🌟 Projetos Destacados
-
-### 📈 **Modernização de Plataforma de Dados - GRUPO SBF**
-> **Resultado**: Migração completa para cloud com 40% de redução de custos
-
-- **Liderança técnica** de equipe de 8 pessoas
-- **Migração** de ambiente on-premise para AWS
-- **Implementação** de governança de dados
-- **Redução de 40%** nos custos de infraestrutura
-
-### 🔄 **Arquitetura de Eventos em Tempo Real - V8.TECH**
-> **Resultado**: Redução de 60% no tempo de processamento de dados
-
-- **Implementação** de Confluent (Kafka) para streaming
-- **Arquitetura** de eventos distribuídos
-- **Automação** de pipelines ETL/ELT
-- **Monitoramento** em tempo real
-
-### 🏪 **Jornada Omnichannel - CENTAURO**
-> **Resultado**: Integração completa entre canais físicos e digitais
-
-- **Data Lake** corporativo unificado
-- **Pipelines** de dados em tempo real
-- **Dashboards** executivos integrados
-- **Governança** de dados centralizada
-
----
-
-## 🌍 Idiomas
-
-| Idioma | Nível | Proficiência |
-|--------|-------|--------------|
-| **Português** | Nativo | ⭐⭐⭐⭐⭐ |
-| **Inglês** | Intermediário | ⭐⭐⭐○○ |
-
----
-
 ## 🎯 Objetivos Profissionais
 
 ### 🎯 **Vagas de Interesse:**
@@ -242,9 +178,60 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 
 ---
 
-## 🤝 Vamos Conectar!
+## 🚀 Projeto do Portfólio
 
-**Vamos conversar sobre como posso contribuir para o sucesso do seu projeto de dados!**
+Este repositório contém meu portfólio profissional desenvolvido com **boas práticas de desenvolvimento web**.
+
+### 🛠️ **Tecnologias Utilizadas:**
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilos modernos com variáveis CSS
+- **JavaScript (ES6+)** - Interatividade e animações
+- **Jekyll** - Gerador de sites estáticos
+- **GitHub Pages** - Hospedagem
+
+### 📁 **Estrutura do Projeto:**
+```
+rodrigosantili.github.io/
+├── index.html              # Página principal
+├── README.md               # Este arquivo
+├── _config.yml             # Configurações Jekyll
+├── package.json            # Dependências e scripts
+├── .gitignore              # Arquivos ignorados
+├── update-portfolio.sh     # Script de automação
+├── DEVELOPMENT.md          # Guia de desenvolvimento
+├── assets/                 # Recursos estáticos
+│   ├── css/style.css       # Estilos
+│   ├── js/main.js          # JavaScript
+│   └── images/             # Imagens
+└── docs/                   # Documentação
+    ├── PORTFOLIO_GUIDE.md  # Guia do usuário
+    └── ARCHITECTURE.md     # Documentação técnica
+```
+
+### 🚀 **Como Executar Localmente:**
+```bash
+# Clone o repositório
+git clone https://github.com/rodrigosantili/rodrigosantili.github.io.git
+cd rodrigosantili.github.io
+
+# Execute o servidor local
+npm run dev
+# ou
+python3 -m http.server 8000
+```
+
+### 📝 **Scripts Disponíveis:**
+- `npm run dev` - Inicia servidor local
+- `npm run deploy` - Deploy automático
+- `npm run lint:html` - Validação HTML
+- `npm run lint:css` - Validação CSS
+- `npm run lint:js` - Validação JavaScript
+- `npm run format` - Formatação de código
+
+### 📚 **Documentação:**
+- [Guia de Desenvolvimento](DEVELOPMENT.md) - Para desenvolvedores
+- [Arquitetura Técnica](docs/ARCHITECTURE.md) - Documentação técnica
+- [Guia do Usuário](docs/PORTFOLIO_GUIDE.md) - Como usar o portfólio
 
 ---
 
