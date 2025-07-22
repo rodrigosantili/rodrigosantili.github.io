@@ -40,7 +40,7 @@ export const STATS_CONFIG = {
   EXPERIENCE_YEARS: 20,
   COMPANIES_COUNT: 7,
   TEAM_SIZE: 12,
-  PROJECTS_COUNT: 30
+  PROJECTS_COUNT: 35
 };
 
 // Configurações de notificações
