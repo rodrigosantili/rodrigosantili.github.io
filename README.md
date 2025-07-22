@@ -41,8 +41,8 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <!-- Foto de perfil (você pode adicionar depois) -->
-            <!-- <img src="assets/images/profile-photo.jpg" alt="Rodrigo Santili" class="profile-photo"> -->
+            <!-- Foto de perfil -->
+            <img src="assets/images/profile-photo.jpg" alt="Rodrigo Santili" class="profile-photo">
             
             <h1>Rodrigo Santili Sgarioni</h1>
             <p class="subtitle">Data Platform Manager | Data Engineering Leader | DataOps Specialist</p>
@@ -52,10 +52,6 @@
                     <i class="fas fa-envelope"></i>
                     rssgarioni@gmail.com
                 </a>
-                <a href="tel:+5511944443012" class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    (11) 94444-3012
-                </a>
                 <a href="https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330" target="_blank" class="contact-item">
                     <i class="fab fa-linkedin"></i>
                     LinkedIn
@@ -64,10 +60,6 @@
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
-                <span class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    São Paulo, SP
-                </span>
             </div>
         </div>
     </header>
