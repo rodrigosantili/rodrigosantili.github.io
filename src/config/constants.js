@@ -37,10 +37,10 @@ export const SEO_CONFIG = {
 
 // Configurações de estatísticas
 export const STATS_CONFIG = {
-  EXPERIENCE_YEARS: 15,
-  COMPANIES_COUNT: 8,
-  TEAM_SIZE: 15,
-  PROJECTS_COUNT: 25
+  EXPERIENCE_YEARS: 20,
+  COMPANIES_COUNT: 7,
+  TEAM_SIZE: 12,
+  PROJECTS_COUNT: 30
 };
 
 // Configurações de notificações

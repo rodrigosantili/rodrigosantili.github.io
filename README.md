@@ -10,7 +10,7 @@
 
 ## 🎯 Sobre Mim
 
-Executivo de Dados com **mais de 15 anos de experiência** liderando a construção e evolução de plataformas analíticas, governança de dados e times técnicos de alta performance. 
+Executivo de Dados com **mais de 20 anos de experiência** liderando a construção e evolução de plataformas analíticas, governança de dados e times técnicos de alta performance. 
 
 Combino **sólida base técnica** com **visão estratégica**, atuando na interface entre tecnologia e negócios para promover soluções escaláveis, seguras e orientadas a valor.
 
@@ -122,12 +122,12 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 ### 🗄️ **Data Platforms**
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
 ### 🔄 **ETL/ELT & Orchestration**
 ![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
 ![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=talend&logoColor=white)
+![Confluent Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
 ### 📊 **Analytics & Visualization**
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
@@ -137,7 +137,6 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 ### 🔧 **Programming & Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
