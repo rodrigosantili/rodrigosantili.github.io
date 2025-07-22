@@ -180,7 +180,7 @@ Combino **sólida base técnica** com **visão estratégica**, atuando na interf
 
 ## 🚀 Projeto do Portfólio
 
-Este repositório contém meu portfólio profissional desenvolvido com **boas práticas de desenvolvimento web**.
+Este repositório contém meu portfólio profissional desenvolvido com **boas práticas de desenvolvimento web** e **arquitetura SOLID/CLEAN**.
 
 ### 🛠️ **Tecnologias Utilizadas:**
 - **HTML5** - Estrutura semântica
@@ -192,20 +192,35 @@ Este repositório contém meu portfólio profissional desenvolvido com **boas pr
 ### 📁 **Estrutura do Projeto:**
 ```
 rodrigosantili.github.io/
-├── index.html              # Página principal
-├── README.md               # Este arquivo
-├── _config.yml             # Configurações Jekyll
-├── package.json            # Dependências e scripts
-├── .gitignore              # Arquivos ignorados
-├── update-portfolio.sh     # Script de automação
-├── DEVELOPMENT.md          # Guia de desenvolvimento
-├── assets/                 # Recursos estáticos
-│   ├── css/style.css       # Estilos
-│   ├── js/main.js          # JavaScript
-│   └── images/             # Imagens
-└── docs/                   # Documentação
-    ├── PORTFOLIO_GUIDE.md  # Guia do usuário
-    └── ARCHITECTURE.md     # Documentação técnica
+├── 📄 index.html              # Página principal
+├── 📄 README.md               # Este arquivo
+├── 📦 package.json            # Dependências e scripts
+├── 🚫 .gitignore              # Arquivos ignorados
+├── 📁 src/                    # Código fonte modular
+│   ├── 📁 config/
+│   │   └── constants.js       # Configurações centralizadas
+│   ├── 📁 modules/
+│   │   ├── AnimationModule.js # Responsável por animações
+│   │   └── ContactModule.js   # Responsável por contato
+│   ├── 📁 utils/
+│   │   └── dom.js            # Utilitários DOM
+│   └── main.js               # Orquestrador principal
+├── 📁 assets/                 # Recursos estáticos
+│   ├── 🎨 css/style.css      # Estilos
+│   └── 🖼️ images/            # Imagens
+├── 📁 config/                 # Configurações do projeto
+│   ├── jekyll.yml            # Configuração Jekyll
+│   ├── project.yml           # Configuração do projeto
+│   └── .*rc                  # Configurações de ferramentas
+├── 📁 scripts/                # Scripts de automação
+│   ├── build.js              # Sistema de build
+│   └── update-portfolio.sh   # Deploy automático
+└── 📚 docs/                   # Documentação técnica
+    ├── DEVELOPMENT.md         # Guia de desenvolvimento
+    ├── ARCHITECTURE.md        # Documentação técnica
+    ├── PORTFOLIO_GUIDE.md     # Guia do usuário
+    ├── REFACTORING.md         # Documentação da refatoração
+    └── 📁 cv_example/         # Exemplos de CV
 ```
 
 ### 🚀 **Como Executar Localmente:**
@@ -222,16 +237,17 @@ python3 -m http.server 8000
 
 ### 📝 **Scripts Disponíveis:**
 - `npm run dev` - Inicia servidor local
+- `npm run build` - Build do projeto
 - `npm run deploy` - Deploy automático
-- `npm run lint:html` - Validação HTML
-- `npm run lint:css` - Validação CSS
-- `npm run lint:js` - Validação JavaScript
+- `npm run lint` - Validação completa de código
 - `npm run format` - Formatação de código
+- `npm run analyze` - Análise completa
 
 ### 📚 **Documentação:**
-- [Guia de Desenvolvimento](DEVELOPMENT.md) - Para desenvolvedores
+- [Guia de Desenvolvimento](docs/DEVELOPMENT.md) - Para desenvolvedores
 - [Arquitetura Técnica](docs/ARCHITECTURE.md) - Documentação técnica
 - [Guia do Usuário](docs/PORTFOLIO_GUIDE.md) - Como usar o portfólio
+- [Refatoração SOLID/CLEAN](docs/REFACTORING.md) - Documentação da refatoração
 
 ---
 

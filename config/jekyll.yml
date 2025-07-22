@@ -1,0 +1,164 @@
+# Jekyll Configuration
+# This file contains the Jekyll configuration for the portfolio
+
+# Site settings
+title: "Rodrigo Santili Sgarioni"
+description: "Data Platform Manager Portfolio"
+author: "Rodrigo Santili Sgarioni"
+email: "rssgarioni@gmail.com"
+
+# URL settings
+url: "https://rodrigosantili.github.io"
+baseurl: ""
+
+# Build settings
+source: "."
+destination: "_site"
+plugins_dir: "_plugins"
+layouts_dir: "_layouts"
+includes_dir: "_includes"
+data_dir: "_data"
+collections_dir: "_collections"
+
+# Theme settings
+theme: jekyll-theme-minimal
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass settings
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git/
+  - .gitignore
+  - README.md
+  - package.json
+  - package-lock.json
+  - .eslintrc.json
+  - .stylelintrc.json
+  - .htmlhintrc
+  - .prettierrc
+  - build.js
+  - update-portfolio.sh
+  - src/
+  - config/
+  - scripts/
+  - docs/
+  - dist/
+
+# Include only these files
+include:
+  - _config.yml
+  - index.html
+  - assets/
+  - .well-known/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Rodrigo Santili Sgarioni"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-category
+    tag: archive-tag
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+# Feed
+feed:
+  path: feed.xml
+  limit: 10
+
+# SEO
+seo:
+  title: "Rodrigo Santili Sgarioni - Data Platform Manager"
+  description: "Executivo de Dados com mais de 15 anos de experiência liderando plataformas analíticas, governança de dados e times técnicos de alta performance."
+  author: "Rodrigo Santili Sgarioni"
+  image: "https://rodrigosantili.github.io/assets/images/profile-og.jpg"
+  twitter:
+    creator: "@rodrigosantili"
+    site: "@rodrigosantili"
+  facebook:
+    app_id: ""
+  google_analytics: ""
+
+# Sitemap
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+  exclude:
+    - "/404.html"
+    - "/feed.xml"
+    - "/sitemap.xml"
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+  startings: [html, head, body]
+
+# Performance
+incremental: true
+profile: false
+strict_front_matter: false
+
+# Development
+future: false
+unpublished: false
+show_drafts: false
+show_excerpts: true
+relative_permalinks: false
+
+# Timezone
+timezone: America/Sao_Paulo
+
+# Encoding
+encoding: utf-8 

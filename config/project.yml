@@ -1,0 +1,219 @@
+# Project Configuration
+# This file contains the main configuration for the portfolio project
+
+# Project Information
+project:
+  name: "rodrigo-santili-portfolio"
+  version: "2.0.0"
+  description: "Portfólio profissional de Rodrigo Santili Sgarioni - Data Platform Manager"
+  author: "Rodrigo Santili Sgarioni"
+  email: "rssgarioni@gmail.com"
+  website: "https://rodrigosantili.github.io"
+  repository: "https://github.com/rodrigosantili/rodrigosantili.github.io"
+
+# Development Settings
+development:
+  port: 8000
+  host: "localhost"
+  auto_reload: true
+  debug: true
+
+# Build Settings
+build:
+  source_dir: "src"
+  output_dir: "dist"
+  assets_dir: "assets"
+  clean_before_build: true
+  minify: true
+  source_maps: false
+
+# Linting Configuration
+linting:
+  html:
+    config: "config/.htmlhintrc"
+    files: ["index.html", "src/**/*.html"]
+  css:
+    config: "config/.stylelintrc.json"
+    files: ["assets/css/**/*.css", "src/**/*.css"]
+  js:
+    config: "config/.eslintrc.json"
+    files: ["src/**/*.js", "scripts/**/*.js"]
+
+# Formatting Configuration
+formatting:
+  prettier:
+    config: "config/.prettierrc"
+    files: ["src/**/*.{js,css,html,json,md}", "scripts/**/*.js"]
+
+# Testing Configuration
+testing:
+  framework: "jest"
+  coverage: true
+  coverage_threshold: 80
+  test_files: ["src/**/*.test.js", "tests/**/*.js"]
+
+# Deployment Configuration
+deployment:
+  platform: "github-pages"
+  branch: "main"
+  auto_deploy: true
+  pre_deploy_checks: ["lint", "build", "test"]
+
+# Performance Configuration
+performance:
+  lighthouse:
+    enabled: true
+    thresholds:
+      performance: 90
+      accessibility: 95
+      best_practices: 90
+      seo: 95
+  bundle_analyzer:
+    enabled: false
+    output: "dist/bundle-analysis.html"
+
+# Security Configuration
+security:
+  content_security_policy: true
+  https_only: true
+  headers:
+    X-Frame-Options: "SAMEORIGIN"
+    X-Content-Type-Options: "nosniff"
+    X-XSS-Protection: "1; mode=block"
+    Referrer-Policy: "strict-origin-when-cross-origin"
+
+# Analytics Configuration
+analytics:
+  google_analytics: ""
+  google_tag_manager: ""
+  hotjar: ""
+  plausible: ""
+
+# SEO Configuration
+seo:
+  title: "Rodrigo Santili Sgarioni - Data Platform Manager"
+  description: "Executivo de Dados com mais de 15 anos de experiência liderando plataformas analíticas, governança de dados e times técnicos de alta performance."
+  keywords: "Data Platform Manager, Data Engineering, DataOps, Snowflake, Databricks, AWS, Liderança em Dados"
+  author: "Rodrigo Santili Sgarioni"
+  og_image: "https://rodrigosantili.github.io/assets/images/profile-og.jpg"
+  twitter_card: "summary_large_image"
+  canonical_url: "https://rodrigosantili.github.io"
+
+# Contact Information
+contact:
+  email: "rssgarioni@gmail.com"
+  linkedin: "https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330"
+  github: "https://github.com/rodrigosantili"
+  website: "https://rodrigosantili.github.io"
+
+# Professional Information
+professional:
+  title: "Data Platform Manager"
+  subtitle: "Data Engineering Leader | DataOps Specialist"
+  experience_years: 15
+  companies_count: 8
+  team_size: 15
+  projects_count: 25
+
+# Skills Configuration
+skills:
+  categories:
+    - name: "Cloud Platforms"
+      icon: "cloud"
+      skills: ["AWS", "GCP", "Azure"]
+    - name: "Data Platforms"
+      icon: "database"
+      skills: ["Snowflake", "Databricks", "Apache Kafka", "Confluent"]
+    - name: "ETL/ELT & Orchestration"
+      icon: "sync"
+      skills: ["Apache Airflow", "dbt", "Talend", "Informatica"]
+    - name: "Analytics & Visualization"
+      icon: "chart-pie"
+      skills: ["Power BI", "Tableau", "Looker", "Apache Superset"]
+    - name: "Programming & Languages"
+      icon: "laptop-code"
+      skills: ["Python", "SQL", "Java", "JavaScript"]
+    - name: "Architecture & Tools"
+      icon: "cogs"
+      skills: ["Data Lake", "Data Warehouse", "Microservices", "Event-Driven"]
+
+# Experience Configuration
+experience:
+  current_position: "Data Architect / Data Engineering / DataOps"
+  current_company: "V8.TECH"
+  current_period: "2022 - Presente"
+  location: "São Paulo, Brazil"
+
+# Education Configuration
+education:
+  degrees:
+    - name: "MBA em Big Data e Data Science"
+      institution: "FIAP"
+      period: "2018-2019"
+      status: "completed"
+    - name: "Tecnólogo em Banco de Dados"
+      institution: "FIAP"
+      period: "2012"
+      status: "completed"
+    - name: "Pós Graduação em Machine Learning Engineering"
+      institution: "Em andamento"
+      period: "2024"
+      status: "in_progress"
+
+# Certifications Configuration
+certifications:
+  - name: "Snowflake for Architects"
+    issuer: "Snowflake"
+    status: "completed"
+    date: "2023"
+  - name: "Databricks Data Engineer Foundations"
+    issuer: "Databricks"
+    status: "completed"
+    date: "2023"
+  - name: "Confluent Fundamentals & Developer"
+    issuer: "Confluent"
+    status: "completed"
+    date: "2023"
+  - name: "Data Governance by Design"
+    issuer: "DAMA / LinkedIn Learning"
+    status: "completed"
+    date: "2023"
+  - name: "AWS Data Analytics Fundamentals"
+    issuer: "AWS"
+    status: "completed"
+    date: "2023"
+
+# Languages Configuration
+languages:
+  - name: "Português"
+    level: "Nativo"
+    proficiency: 5
+  - name: "Inglês"
+    level: "Intermediário"
+    proficiency: 3
+
+# Job Interests Configuration
+job_interests:
+  positions:
+    - "Data Platform Manager"
+    - "Data Engineering Manager"
+    - "Head of Data"
+    - "Data Manager"
+    - "Data Architecture Manager"
+    - "DataOps Manager"
+    - "Data Architect"
+    - "Senior Data Engineer"
+    - "Data Strategy Manager"
+    - "Analytics Manager"
+  
+  sectors:
+    - "Tecnologia"
+    - "Fintech"
+    - "E-commerce"
+    - "Varejo"
+    - "Consultoria"
+    - "Startups"
+    - "Bancos"
+    - "Seguros"
+    - "Telecomunicações"
+    - "Indústria" 
