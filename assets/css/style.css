@@ -248,7 +248,7 @@ body {
 
 .badge-light {
   background: var(--analytics-color);
-  color: white;
+  color: rgb(132, 75, 150);
 }
 
 .badge-dark {
