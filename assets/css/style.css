@@ -339,6 +339,13 @@ body {
   flex: 1;
 }
 
+.project-summary {
+  margin-bottom: 15px;
+  flex: 1;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
