@@ -318,9 +318,7 @@ body {
   line-height: 1.4;
 }
 
-.project-header {
-  margin-bottom: 15px;
-}
+
 
 .project-divider {
   border: none;
@@ -339,7 +337,7 @@ body {
   flex: 1;
 }
 
-.project-summary {
+.project-description {
   margin-bottom: 15px;
   flex: 1;
   line-height: 1.6;
