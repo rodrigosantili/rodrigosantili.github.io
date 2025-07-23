@@ -178,47 +178,50 @@ body {
 /* Skills */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
   margin-top: 20px;
 }
 
 .skill-category {
   background: var(--light-color);
-  padding: 15px;
+  padding: 12px;
   border-radius: var(--border-radius);
   border-left: 3px solid var(--accent-color);
 }
 
 .skill-category h4 {
   color: var(--primary-color);
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .skill-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .skill-list li {
-  padding: 5px 0;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.skill-list li:last-child {
+  padding: 0;
   border-bottom: none;
 }
 
 /* Badges */
 .badge {
   display: inline-block;
-  padding: 6px 12px;
-  margin: 2px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  padding: 4px 8px;
+  margin: 1px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .badge-primary {
@@ -248,7 +251,7 @@ body {
 
 .badge-light {
   background: var(--analytics-color);
-  color: rgb(132, 75, 150);
+  color: white;
 }
 
 .badge-dark {
