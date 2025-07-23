@@ -10,6 +10,9 @@
   --danger-color: #dc3545;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
+  --analytics-color: #17a2b8;
+  --ai-color: #6f42c1;
+  --databases-color: #fd7e14;
   --border-radius: 8px;
   --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -244,18 +247,17 @@ body {
 }
 
 .badge-light {
-  background: var(--light-color);
-  color: var(--dark-color);
-  border: 1px solid #dee2e6;
+  background: var(--analytics-color);
+  color: white;
 }
 
 .badge-dark {
-  background: var(--dark-color);
+  background: var(--ai-color);
   color: white;
 }
 
 .badge-accent {
-  background: var(--accent-color);
+  background: var(--databases-color);
   color: white;
 }
 
