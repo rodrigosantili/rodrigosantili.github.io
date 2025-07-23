@@ -243,6 +243,22 @@ body {
   color: white;
 }
 
+.badge-light {
+  background: #f8f9fa;
+  color: var(--dark-color);
+  border: 1px solid #dee2e6;
+}
+
+.badge-dark {
+  background: var(--dark-color);
+  color: white;
+}
+
+.badge-accent {
+  background: #6f42c1;
+  color: white;
+}
+
 /* Projetos */
 .project-card {
   background: white;
