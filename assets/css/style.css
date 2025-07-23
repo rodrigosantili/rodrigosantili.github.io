@@ -244,7 +244,7 @@ body {
 }
 
 .badge-light {
-  background: #f8f9fa;
+  background: var(--light-color);
   color: var(--dark-color);
   border: 1px solid #dee2e6;
 }
@@ -255,7 +255,7 @@ body {
 }
 
 .badge-accent {
-  background: #6f42c1;
+  background: var(--accent-color);
   color: white;
 }
 
