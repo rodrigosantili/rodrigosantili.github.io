@@ -2,18 +2,28 @@
 
 /* Variáveis CSS */
 :root {
-  --primary-color: #2f5496;
-  --secondary-color: #6c757d;
+  /* Cores específicas para seções de habilidades */
+  --cloud-platforms-color: #2f5496;
+  --modern-data-platforms-color: #28a745;
+  --etl-orchestration-color: #ffc107;
+  --analytics-visualization-color: #17a2b8;
+  --programming-languages-color: #6c757d;
+  --architecture-tools-color: #dc3545;
+  --ai-machine-learning-color: #6f42c1;
+  --databases-color: #fd7e14;
+  --iac-devops-color: #1cc894;
+  
+  /* Aliases para compatibilidade com o resto do CSS */
+  --primary-color: var(--cloud-platforms-color);
+  --secondary-color: var(--programming-languages-color);
   --accent-color: #007bff;
-  --success-color: #8f9bed;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
+  --success-color: var(--modern-data-platforms-color);
+  --warning-color: var(--etl-orchestration-color);
+  --danger-color: var(--architecture-tools-color);
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --analytics-color: #17a2b8;
-  --ai-color: #6f42c1;
-  --databases-color: #fd7e14;
-  --iac-color: #1cc894;
+  
+  /* Configurações gerais */
   --border-radius: 8px;
   --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -226,37 +236,37 @@ body {
 }
 
 .badge-primary {
-  background: var(--primary-color);
+  background: var(--cloud-platforms-color);
   color: white;
 }
 
 .badge-secondary {
-  background: var(--secondary-color);
+  background: var(--programming-languages-color);
   color: white;
 }
 
 .badge-success {
-  background: var(--success-color);
+  background: var(--modern-data-platforms-color);
   color: white;
 }
 
 .badge-warning {
-  background: var(--warning-color);
-  color: var(--dark-color);
+  background: var(--etl-orchestration-color);
+  color: #343a40;
 }
 
 .badge-danger {
-  background: var(--danger-color);
+  background: var(--architecture-tools-color);
   color: white;
 }
 
 .badge-light {
-  background: var(--analytics-color);
+  background: var(--analytics-visualization-color);
   color: white;
 }
 
 .badge-dark {
-  background: var(--ai-color);
+  background: var(--ai-machine-learning-color);
   color: white;
 }
 
@@ -266,7 +276,7 @@ body {
 }
 
 .badge-iac {
-  background: var(--iac-color);
+  background: var(--iac-devops-color);
   color: white;
 }
 
