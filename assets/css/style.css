@@ -13,13 +13,8 @@
   --databases-color: #fd7e14;
   --iac-devops-color: #1cc894;
   
-  /* Aliases para compatibilidade com o resto do CSS */
-  --primary-color: var(--cloud-platforms-color);
-  --secondary-color: var(--programming-languages-color);
+  /* Cores gerais do sistema */
   --accent-color: #007bff;
-  --success-color: var(--modern-data-platforms-color);
-  --warning-color: var(--etl-orchestration-color);
-  --danger-color: var(--architecture-tools-color);
   --light-color: #f8f9fa;
   --dark-color: #343a40;
   
@@ -53,7 +48,7 @@ body {
 .header {
   text-align: center;
   padding: 40px 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, var(--cloud-platforms-color) 0%, #1e3a8a 100%);
   color: white;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   margin-bottom: 30px;
@@ -116,10 +111,10 @@ body {
 
 .section-title {
   font-size: 1.8rem;
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--cloud-platforms-color);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -140,7 +135,7 @@ body {
   padding: 25px;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--cloud-platforms-color);
 }
 
 .card:hover {
@@ -149,7 +144,7 @@ body {
 }
 
 .card h3 {
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   margin-bottom: 15px;
   font-size: 1.3rem;
 }
@@ -165,19 +160,19 @@ body {
 
 .experience-title {
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
 .experience-company {
-  color: var(--secondary-color);
+  color: var(--programming-languages-color);
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 .experience-period {
-  color: var(--secondary-color);
+  color: var(--programming-languages-color);
   font-size: 0.9rem;
   margin-bottom: 15px;
 }
@@ -202,7 +197,7 @@ body {
 }
 
 .skill-category h4 {
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   margin-bottom: 8px;
   font-size: 1rem;
   display: flex;
@@ -235,47 +230,47 @@ body {
   white-space: nowrap;
 }
 
-.badge-primary {
+.badge-cloud-platforms {
   background: var(--cloud-platforms-color);
   color: white;
 }
 
-.badge-secondary {
+.badge-programming-languages {
   background: var(--programming-languages-color);
   color: white;
 }
 
-.badge-success {
+.badge-modern-data-platforms {
   background: var(--modern-data-platforms-color);
   color: white;
 }
 
-.badge-warning {
+.badge-etl-orchestration {
   background: var(--etl-orchestration-color);
   color: #343a40;
 }
 
-.badge-danger {
+.badge-architecture-tools {
   background: var(--architecture-tools-color);
   color: white;
 }
 
-.badge-light {
+.badge-analytics-visualization {
   background: var(--analytics-visualization-color);
   color: white;
 }
 
-.badge-dark {
+.badge-ai-machine-learning {
   background: var(--ai-machine-learning-color);
   color: white;
 }
 
-.badge-accent {
+.badge-databases {
   background: var(--databases-color);
   color: white;
 }
 
-.badge-iac {
+.badge-iac-devops {
   background: var(--iac-devops-color);
   color: white;
 }
@@ -309,7 +304,7 @@ body {
 }
 
 .project-title {
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   font-size: 1.3rem;
   margin-bottom: 10px;
   min-height: 3.2rem; /* Altura mínima para 2 linhas */
@@ -327,7 +322,7 @@ body {
 }
 
 .project-info {
-  color: var(--secondary-color);
+  color: var(--programming-languages-color);
   margin-top: 10px;
   line-height: 1.5;
 }
@@ -341,7 +336,7 @@ body {
   margin-bottom: 15px;
   flex: 1;
   line-height: 1.6;
-  color: var(--secondary-color);
+  color: var(--programming-languages-color);
 }
 
 .project-tech {
@@ -365,18 +360,18 @@ body {
   padding: 20px;
   background: var(--light-color);
   border-radius: var(--border-radius);
-  border-top: 4px solid var(--primary-color);
+  border-top: 4px solid var(--cloud-platforms-color);
 }
 
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--cloud-platforms-color);
   margin-bottom: 5px;
 }
 
 .stat-label {
-  color: var(--secondary-color);
+  color: var(--programming-languages-color);
   font-size: 0.9rem;
 }
 
