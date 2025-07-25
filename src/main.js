@@ -6,6 +6,8 @@
 
 import { AnimationModule } from './modules/AnimationModule.js';
 import { ContactModule } from './modules/ContactModule.js';
+import { NavigationModule } from './modules/NavigationModule.js';
+import { StatsModule } from './modules/StatsModule.js';
 import { DOMUtils } from './utils/dom.js';
 
 /**
@@ -67,6 +69,16 @@ class PortfolioApp {
     // Módulo de contato
     const contactModule = new ContactModule();
     this.modules.set('contact', contactModule);
+
+    // Módulo de navegação
+    const navigationModule = new NavigationModule();
+    navigationModule.init();
+    this.modules.set('navigation', navigationModule);
+
+    // Módulo de estatísticas
+    const statsModule = new StatsModule();
+    statsModule.init();
+    this.modules.set('stats', statsModule);
 
     console.log('📦 Módulos inicializados:', Array.from(this.modules.keys()));
   }

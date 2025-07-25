@@ -38,14 +38,51 @@
     <!-- Loading -->
     <div class="loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;"></div>
 
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <i class="fas fa-chart-line"></i>
+                Rodrigo Santili
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="#sobre" class="active">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Header -->
     <header class="header">
+        <div class="header-content">
         <div class="container">
             <!-- Foto de perfil -->
             <img src="assets/images/profile-photo.jpg" alt="Rodrigo Santili" class="profile-photo">
             
             <h1>Rodrigo Santili Sgarioni</h1>
             <p class="subtitle">Data Platform Manager | Data Engineering Leader | DataOps Specialist | Data Architect</p>
+            
+            <div class="header-stats">
+                <div class="header-stat">
+                    <span class="header-stat-number">20+</span>
+                    <div class="header-stat-label">Anos de Experiência</div>
+                </div>
+                <div class="header-stat">
+                    <span class="header-stat-number">15+</span>
+                    <div class="header-stat-label">Empresas Atendidas</div>
+                </div>
+                <div class="header-stat">
+                    <span class="header-stat-number">16</span>
+                    <div class="header-stat-label">Pessoas Lideradas</div>
+                </div>
+                <div class="header-stat">
+                    <span class="header-stat-number">50+</span>
+                    <div class="header-stat-label">Projetos Concluídos</div>
+                </div>
+            </div>
             
             <div class="contact-info">
                 <a href="mailto:rssgarioni@gmail.com" class="contact-item">
@@ -61,6 +98,7 @@
                     GitHub
                 </a>
             </div>
+        </div>
         </div>
     </header>
 
@@ -91,31 +129,7 @@
             </div>
         </section>
 
-        <!-- Estatísticas -->
-        <section class="section" id="stats">
-            <h2 class="section-title">
-                <i class="fas fa-chart-bar"></i>
-                Estatísticas da Carreira
-            </h2>
-            <div class="stats-container">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="20+">0</div>
-                    <div class="stat-label">Anos de Experiência</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="15+">0</div>
-                    <div class="stat-label">Empresas Atendidas</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="16">0</div>
-                    <div class="stat-label">Pessoas Lideradas</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="50+">0</div>
-                    <div class="stat-label">Projetos Concluídos</div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Experiência Profissional -->
         <section class="section" id="experiencia">
@@ -816,12 +830,15 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Rodrigo Santili Sgarioni. Todos os direitos reservados.</p>
-            <div style="margin-top: 20px;">
-                <a href="https://github.com/rodrigosantili" target="_blank" style="margin: 0 10px;">
-                    <i class="fab fa-github fa-2x"></i>
+            <div class="social-links">
+                <a href="https://github.com/rodrigosantili" target="_blank">
+                    <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330" target="_blank" style="margin: 0 10px;">
-                    <i class="fab fa-linkedin fa-2x"></i>
+                <a href="https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:rssgarioni@gmail.com">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
