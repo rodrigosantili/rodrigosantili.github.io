@@ -332,9 +332,15 @@ body {
 /* Grid layout */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 30px;
+}
+
+/* Grid específico para idiomas - 3 cards na mesma linha */
+#idiomas .grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 /* Grid específico para projetos - empilhados verticalmente */
@@ -606,17 +612,10 @@ body {
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
+  border-left: 4px solid var(--secondary-color);
 }
 
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-}
+
 
 .project-card:hover {
   transform: translateY(-10px);
@@ -633,12 +632,32 @@ body {
 .project-title {
   color: var(--primary-color);
   font-size: 1.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   min-height: 3.2rem;
   display: flex;
   align-items: center;
   line-height: 1.4;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.project-client {
+  color: var(--secondary-color);
   font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.project-meta {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-meta i {
+  color: var(--accent-color);
 }
 
 .project-divider {
@@ -812,6 +831,11 @@ body {
   
   .grid {
     grid-template-columns: 1fr;
+  }
+  
+  #idiomas .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
   
   .skills-grid {
