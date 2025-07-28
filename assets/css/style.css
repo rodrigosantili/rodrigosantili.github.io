@@ -38,6 +38,20 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Dark mode variables */
+[data-theme="dark"] {
+  /* Cores ajustadas para dark mode - Stack Tecnológico */
+  --cloud-platforms-color: #60a5fa;
+  --modern-data-platforms-color: #34d399;
+  --etl-orchestration-color: #fbbf24;
+  --analytics-visualization-color: #a78bfa;
+  --programming-languages-color: #94a3b8;
+  --architecture-tools-color: #f87171;
+  --ai-machine-learning-color: #f472b6;
+  --databases-color: #fb923c;
+  --iac-devops-color: #22d3ee;
+}
+
 /* Reset e base */
 * {
   margin: 0;
