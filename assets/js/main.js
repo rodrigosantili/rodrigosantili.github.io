@@ -4,8 +4,8 @@
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const html = document.documentElement;
 
-// Verificar preferência salva
-const savedTheme = localStorage.getItem('theme') || 'light';
+// Verificar preferência salva - Dark como padrão
+const savedTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
 updateDarkModeIcon(savedTheme);
 
