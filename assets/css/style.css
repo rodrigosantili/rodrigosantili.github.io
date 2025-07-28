@@ -99,18 +99,21 @@ body {
 
 .navbar-menu {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .navbar-menu a {
   text-decoration: none;
   color: var(--text-secondary);
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: var(--border-radius);
   transition: var(--transition);
   position: relative;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .navbar-menu a:hover {
@@ -1225,15 +1228,21 @@ body {
 }
 
 [data-theme="dark"] .navbar-menu a {
-  color: var(--text-secondary);
+  color: #cbd5e1;
 }
 
 [data-theme="dark"] .navbar-menu a:hover {
-  color: var(--text-primary);
+  color: #ffffff;
+  background: rgba(0, 212, 170, 0.1);
 }
 
 [data-theme="dark"] .navbar-menu a.active {
-  color: var(--secondary-color);
+  color: #00d4aa;
+  background: rgba(0, 212, 170, 0.15);
+}
+
+[data-theme="dark"] .navbar-menu a.active::after {
+  background: #00d4aa;
 }
 
 [data-theme="dark"] .header {
