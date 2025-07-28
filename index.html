@@ -33,8 +33,20 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
     <!-- Loading -->
     <div class="loading" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;"></div>
 
@@ -52,6 +64,9 @@
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Alternar modo escuro">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
@@ -64,7 +79,8 @@
                     <div class="header-left">
                         <h1>Rodrigo Santili Sgarioni</h1>
                         
-                        <p class="subtitle">Data Engineering Manager | Data Platform Manager | Data Architect | Data Engineering | DataOps | Real-time Pipelines • Snowflake • Kafka • AWS/GCP | ML Engineering</p>
+                        <p class="subtitle">Data Engineering Manager | Data Platform Manager | Data Architect | Data Engineering | DataOps</p>
+                        <p class="subtitle-secondary">Snowflake • Kafka • AWS/GCP • Real-time Pipelines • ML Engineering</p>
                         
                         <div class="contact-info">
                             <a href="mailto:rssgarioni@gmail.com" class="contact-item">
@@ -89,7 +105,7 @@
     </header>
 
     <br>
-    <div class="container">
+    <main id="main-content" class="container">
         <!-- Sobre Mim -->
         <section class="section" id="sobre">
             <h2 class="section-title">
@@ -109,7 +125,7 @@
                         
                         <p>Se você busca um profissional com <strong>visão estratégica</strong>, <strong>mindset data-driven</strong> e capacidade de entregar valor através de <strong>soluções de dados modernas</strong>, vamos conversar.</p>
                     </div>
-                
+                <br>
                 <!-- Estatísticas integradas -->
                 <!-- <div class="profile-stats">
                     <div class="profile-stat">
@@ -129,7 +145,7 @@
                         <div class="profile-stat-label">Projetos Concluídos</div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
 
         </section>
@@ -827,6 +843,7 @@
                 </div>
             </div>
         </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -847,18 +864,33 @@
     </footer>
 
     <!-- JavaScript -->
-    <script type="module" src="src/main.js"></script>
+    <script src="assets/js/main.js"></script>
     
-    <!-- Google Analytics (configurável) -->
-    <!-- Descomente e configure seu ID do Google Analytics -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rodrigo Santili Sgarioni",
+      "jobTitle": "Data Platform Manager",
+      "description": "Executivo de Dados com mais de 15 anos de experiência liderando plataformas analíticas e times técnicos.",
+      "url": "https://rodrigosantili.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/rodrigo-santili-sgarioni-48004330",
+        "https://github.com/rodrigosantili"
+      ],
+      "knowsAbout": [
+        "Data Engineering",
+        "Data Architecture", 
+        "Cloud Platforms",
+        "Machine Learning",
+        "DataOps"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "V8.TECH"
+      }
+    }
     </script>
-    -->
 </body>
 </html> 
