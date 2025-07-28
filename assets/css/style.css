@@ -138,7 +138,6 @@ body {
 /* Header redesenhado */
 .header {
   margin-top: 70px;
-  text-align: center;
   padding: 80px 0;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 50%, var(--secondary-color) 100%);
   color: white;
@@ -162,12 +161,31 @@ body {
   z-index: 2;
 }
 
+.header-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.header-right {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-photo {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 30px;
   box-shadow: var(--box-shadow-lg);
   transition: var(--transition);
   position: relative;
@@ -196,7 +214,7 @@ body {
 }
 
 .header h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   margin-bottom: 15px;
   font-weight: 800;
   background: linear-gradient(135deg, #ffffff 0%, var(--secondary-color) 100%);
@@ -207,31 +225,30 @@ body {
 }
 
 .header .subtitle {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   opacity: 0.9;
   font-weight: 400;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 900px;
+  line-height: 1.6;
 }
 
 .header-stats {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 30px;
   margin: 30px 0;
   flex-wrap: wrap;
 }
 
 .header-stat {
   text-align: center;
-  padding: 20px;
+  padding: 15px 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: var(--border-radius);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  min-width: 120px;
+  min-width: 100px;
 }
 
 .header-stat-number {
@@ -249,7 +266,7 @@ body {
 
 .contact-info {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -808,26 +825,43 @@ body {
     display: none;
   }
   
+  .header-layout {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .header-left {
+    text-align: center;
+  }
+  
   .header h1 {
     font-size: 2.5rem;
   }
   
   .header .subtitle {
     font-size: 1.1rem;
+    max-width: 100%;
   }
   
   .header-stats {
+    justify-content: center;
     gap: 20px;
   }
   
   .header-stat {
-    min-width: 100px;
+    min-width: 80px;
     padding: 15px;
   }
   
   .contact-info {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .profile-photo {
+    width: 180px;
+    height: 180px;
   }
   
   .grid {
