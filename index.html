@@ -447,6 +447,45 @@
                 Projetos Destacados
             </h2>
             <div class="grid">
+                <div class="project-card" data-category="governance">
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Chatbot de Catálogo de Dados via Slack
+                            <div class="project-role development">DESENVOLVIMENTO</div>
+                        </h3>
+                        <div class="project-client">SolFacil</div>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</span>
+                        </div>
+                        <hr class="project-divider">
+                        <br>
+                        <div class="project-story">
+                            <div class="story-section">
+                                <h4 class="story-title">Desafio</h4>
+                                <p>A SolFacil implementou o Open Metadata como solução de Governança, Qualidade, Metadados e Linhagem de dados. No entanto, os usuários de negócio não conseguiam acessar facilmente o catálogo para consultar informações sobre as tabelas disponíveis. Era necessário criar uma solução que democratizasse o acesso ao catálogo de dados de forma intuitiva e acessível.</p>
+                            </div>
+                            
+                            <div class="story-section">
+                                <h4 class="story-title">Solução</h4>
+                                <p><strong>Meu Papel:</strong> Desenvolvi a solução completa de chatbot para democratização do acesso ao catálogo de dados.</p>
+                                <p>Desenvolvi uma solução integrada ao Slack que permite consultas em linguagem natural ao catálogo de dados. O sistema utiliza Lambda para buscar dados do Open Metadata, OpenAI para vetorização no Qdrant, e n8n para orquestrar o workflow completo: detecção da mensagem → processamento da pergunta → busca vetorial → geração de resposta com GPT-4 → retorno via Slack.</p>
+                            </div>
+                            
+                            <div class="story-section">
+                                <h4 class="story-title">Resultado</h4>
+                                <p>A solução democratizou completamente o acesso ao catálogo de dados, permitindo que <strong>times de negócio consultem informações de forma natural e intuitiva</strong>. Agora os usuários podem perguntar "quais tabelas de venda têm informações por filial?" e receber respostas precisas instantaneamente. O projeto <strong>impulsionou a cultura Data-Driven</strong> na empresa, <strong>reduziu dependência da equipe de dados</strong> para consultas simples e <strong>aumentou significativamente a adoção do catálogo de dados</strong> pelos usuários de negócio.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="badge badge-cloud-platforms">AWS</span>
+                            <span class="badge badge-programming-languages">Python</span>
+                            <span class="badge badge-ai-machine-learning">OpenAI</span>
+                            <span class="badge badge-architecture-tools">Open Metadata</span>
+                            <span class="badge badge-etl-orchestration">n8n</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card" data-category="modernization">
                     <div class="project-content">
                         <h3 class="project-title">
@@ -559,44 +598,6 @@
                             <span class="badge badge-etl-orchestration">Confluent Kafka</span>
                             <span class="badge badge-cloud-platforms">AWS</span>
                             <span class="badge badge-architecture-tools">Data Mesh</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="omnichannel">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            Jornada Omnichannel
-                            <div class="project-role development">DESENVOLVIMENTO</div>
-                        </h3>
-                        <div class="project-client">Centauro</div>
-                        <div class="project-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</span>
-                        </div>
-                        <hr class="project-divider">
-                        <br>
-                        <div class="project-story">
-                            <div class="story-section">
-                                <h4 class="story-title">Desafio</h4>
-                                <p>A Centauro precisava integrar o estoque entre loja física e e-commerce, permitindo que ambos os canais enxergassem o estoque um do outro. A falta de visibilidade cruzada impedia que clientes do e-commerce vissem o estoque da loja física mais próxima e vice-versa, limitando as opções de compra e entrega.</p>
-                            </div>
-                            
-                            <div class="story-section">
-                                <h4 class="story-title">Solução</h4>
-                                <p><strong>Meu Papel:</strong> Implementei a solução técnica para unificação de estoque entre os sistemas.</p>
-                                <p>Desenvolvemos solução completa para unificação de estoque entre loja física (IBM Informix), e-commerce (SQL Server) e sistema central (SAP). Implementamos sincronização automática de dados de estoque entre os sistemas, criando um sistema único de verdade para o estoque em todos os canais.</p>
-                            </div>
-                            
-                            <div class="story-section">
-                                <h4 class="story-title">Resultado</h4>
-                                <p>A solução permitiu que <strong>clientes do e-commerce vissem o estoque da loja física mais próxima</strong> e <strong>clientes de loja física vissem o estoque do e-commerce</strong>. Além disso, habilitou a <strong>opção de entrega direta da loja física mais próxima do cliente</strong>, melhorando significativamente a experiência omnichannel e aumentando as opções de compra disponíveis. O projeto também <strong>reduziu custos de logística</strong> através da otimização das rotas de entrega.</p>
-                            </div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="badge badge-databases">Oracle</span>
-                            <span class="badge badge-databases">SQL Server</span>
-                            <span class="badge badge-databases">Informix</span>
-                            <span class="badge badge-databases">SAP</span>
                         </div>
                     </div>
                 </div>
